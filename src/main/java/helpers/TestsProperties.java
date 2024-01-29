@@ -10,6 +10,6 @@ import org.aeonbits.owner.Config;
 })
 public interface TestsProperties extends Config {
 
-    @Config.Key("google.url")
-    String googleUrl();
+    @Config.Key("yandex.market.url")
+    String yandexMarketUrl();
 }

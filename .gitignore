@@ -2,3 +2,6 @@
 /.idea/
 /src/main/resources/
 /src/test/resources/
+/target/
+/build/
+/allure-results/
