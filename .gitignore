@@ -1,5 +1,4 @@
 # Default ignored files
-/shelf/
 /.idea/
-/src/test/resources/
 /src/main/resources/
+/src/test/resources/
