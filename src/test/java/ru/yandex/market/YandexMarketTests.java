@@ -7,7 +7,6 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.List;
 
-import static helpers.Properties.testsProperties;
 
 public class YandexMarketTests extends BaseTests {
     @Feature("Проверка сайта Yandex Market")
@@ -17,7 +16,7 @@ public class YandexMarketTests extends BaseTests {
     public void testsYandexMarket(
             String categoryName, String subCategoryName, List<String> brands, List<String> productNames
     ) {
-        MainPage.openPage(testsProperties.yandexMarketUrl(), MainPage.class)
+        MainPage.openPage("https://market.yandex.ru/", MainPage.class)
                 .goToCatalog(categoryName)
                 .goToSubCategoryPage(subCategoryName, CategoryPage.class)
                 .checkPageTitle(subCategoryName)
